@@ -1,0 +1,8 @@
+minGameVersion: 136 //Минимальная версия игры для работы мода
+name: "test" //Название хранящееся в файле игры
+subtitle: "Hello" //Подзаголовок
+displayName: "Test" //Отображаемое название мода
+description: "My new planet mod!" //Описание мода
+author: "Lehanchic25" //Автор мода (создатель)
+version: "1" //Версия мода
+hidden: true //Доступен ли в мультиплеере (true - доступен, false - недоступен)
