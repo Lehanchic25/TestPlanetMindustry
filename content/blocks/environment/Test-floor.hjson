@@ -1,0 +1,4 @@
+type: floor,
+name: Test floor,
+variants: 2,             //Кол-во вариаций (Спрайтов)
+wall: Test-wall
