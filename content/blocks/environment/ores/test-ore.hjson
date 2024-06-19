@@ -1,0 +1,4 @@
+  variants: 2
+  itemDrop: testItem
+  name: Test Ore
+  type: OreBlock
