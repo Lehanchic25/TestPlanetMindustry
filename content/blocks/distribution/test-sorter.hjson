@@ -1,0 +1,16 @@
+type: Sorter
+category: distribution
+size: 1
+health: 40
+name: Test Sorter
+
+requirements: [
+  testItem/4
+] 
+
+research: {
+    parent: test-router
+    requirements: [
+        testItem/12
+    ]
+}

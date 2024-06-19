@@ -1,0 +1,15 @@
+type: OverflowGate
+category: distribution
+name: Test Overflow Gate
+health: 40
+
+requirements: [
+  testItem/6
+] 
+
+  research: {
+    parent: test-sorter
+    requirements: [
+        testItem/10
+    ]
+} 

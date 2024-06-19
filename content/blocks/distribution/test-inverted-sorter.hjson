@@ -1,0 +1,17 @@
+type: Sorter
+category: distribution
+size: 1
+health: 40
+name: Test Inverted Sorter
+invert: true
+
+requirements: [
+  testItem/4
+] 
+
+research: {
+    parent: test-sorter
+    requirements: [
+        testItem/12
+    ]
+}
