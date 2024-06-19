@@ -1,0 +1,16 @@
+type: OverflowGate
+category: distribution
+name: Test Underflow Gate
+health: 40
+invert: true
+
+requirements: [
+  testItem/6
+] 
+
+  research: {
+    parent: test-overflow-gate
+    requirements: [
+        testItem/10
+    ]
+} 
