@@ -1,0 +1,56 @@
+name: test-turret
+localizedName: Test Turret
+requirements: [
+testItem/24
+]
+research: {
+    parent: Core
+    requirements: [
+        testItem/48
+]
+}
+
+//Тип, радиус атаки, эффект стрельбы
+type: ItemTurret
+range: 150
+shootEffect: {
+        type: Particle Effect
+        particles: 5
+        lifetime: 35
+        sizeFrom: 6
+        colorFrom: 505050
+        sizeTo: 0
+}
+health: 280
+category: turret
+reload: 40                  //Перезарядка
+//Виды пуль (боеприпасов)
+"ammoTypes": {
+    "testItem": {
+                    type: BasicBulletType
+                    lifetime: 100
+                    speed: 1
+                    lightning: 7
+                    lightningColor: 00cdd4
+                    lightningLengthRand: 4.56
+                    lightningLength: 10
+                    lightningDamage: 7
+                    sprite: large-orb
+                    hitEffect: none
+                    despawnEffect: none
+                    despawnSound: spark
+                    frontColor: 616060
+                    damage: 35
+                    backColor: 505050
+                    bulletInterval: 3.2
+                    //Интервальная пуля
+                    intervalBullet: {
+                        type: LightningBulletType
+                        lightningLength: 3
+                        lightningLengthRand: 4.56
+                        lightningDamage: 10
+                        lightningColor: 4f4f4f
+                       }
+                   }
+}
+shootSound: shockBlast          //Звук выстрела
