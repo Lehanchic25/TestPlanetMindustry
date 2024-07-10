@@ -1,0 +1,17 @@
+name: big-test-wall
+localizedName: Big Test Wall
+type: Wall
+category: defense
+size: 2
+health: 1060
+
+requirements: [
+    testItem/24
+]
+
+research: {
+    parent: test-wall
+    requirements: [
+        testItem/48
+    ]
+  }
