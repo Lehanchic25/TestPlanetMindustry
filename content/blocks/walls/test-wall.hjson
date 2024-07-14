@@ -1,0 +1,17 @@
+name: test-wall
+localizedName: Test Wall
+type: Wall
+category: defense
+size: 1
+health: 260
+
+requirements: [
+    testItem/8
+]
+
+research: {
+    parent: Core
+    requirements: [
+        testItem/24
+    ]
+  } 
