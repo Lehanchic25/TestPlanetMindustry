@@ -1,0 +1,17 @@
+  localizedName: 5edwgTEST
+  description: test map number 2
+  captureWave: 15       //Волна на которой он закончится
+  difficulty: 2      //Сложность сектора
+  alwaysUnlocked: true     //Всегда открыт? (Оставляйте true)
+  addStartingItems: true      //Будут ли добавленны стартовые предметы? (true - да, false - нет)
+  startWaveTimeMultiplier: 3      //Время до 1 волны 
+  useAI: false      //Используется ИИ? (Оставляйте false, если только вы не указали в карте, чтобы враг использовал ИИ)
+  showSectorLandInfo: true      //Показывать описания сектора? (true - да, false - нет)
+  planet: TestPlanet
+  name: 5edwgTEST      //Название сектора (в коде)
+  sector: 5       //Сектор (какой сектор на планете)
+
+  //К чему прикреплён сектор
+  research: {
+    parent: "test"
+  }
