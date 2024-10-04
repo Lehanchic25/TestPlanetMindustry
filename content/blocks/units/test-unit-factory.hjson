@@ -1,0 +1,29 @@
+name: "Test unit factory"
+alwaysUnlocked: true
+type: UnitFactory
+health: 615
+size: 3
+configurable: true
+consumes: {
+power: 4.2
+}
+plans: [
+  {
+    unit: tank-unit
+    requirements: [
+      testItem/45
+    ]
+    time: 1600
+  },
+  {
+    unit: spider-unit
+    requirements: [
+      testItem/20
+    ]
+    time: 1200
+  }
+]
+category: units
+requirements: [
+  testItem/150
+]
