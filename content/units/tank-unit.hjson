@@ -1,0 +1,76 @@
+{
+	"name": "tank unit",
+	"type": tank,
+	"flying": false,
+	"alwaysUnlocked": true,
+	"armor": 4,
+	"faceTarget": true,
+	"squareShape": true,
+    "treadFrames": 18,
+    "treadPullOffset": 8,
+	"treadRects": [
+		{
+		"x": 0
+		"y": 0
+		"width": 20,
+		"height": 17
+		}
+	],
+	"health": 550,
+	"speed": 1,
+	"range": 120,
+	"size": 10,
+	"omniMove": false,
+	"rotateMoveFirst": true,
+	"rotateShooting": false,
+	"rotateSpeed": 2.75,
+	weapons: [
+	{
+		"name": uno,
+		"reload": 30,
+		"x": 3.5,
+		"y": -4.25,
+		"mirror": true,
+		"alternate": true,
+		"rotate": true,
+		bullet: {
+			"type": BasicBuletType,
+			"damage": 6,
+			"speed": 5,
+			"lifetime": 6,
+			"hitEffect": bubble,
+			"status": wet,
+			"statusDuration": 600
+		}
+	},
+	{
+		"name": none,
+		"reload": 120,
+		"x": 0,
+		"y": 4,
+		"mirror": false,
+		"shoot": {
+			"type": "ShootPattern",
+			"shotDelay": 3,
+			"shots": 10
+		},
+		bullet: {
+			"type": ShrapnelBulletType,
+			"length": 8,
+			"damage": 3,
+			"pierceArmor": true, //Если true, то урон будет на прямую идти в здоровье, а не уменьшаться от количества брони на враге.
+			"status": shocked,
+			"statusDuration": 30
+		}
+	}
+	],
+	abilities: [
+		{
+		"type": ArmorPlateAbility,
+		"drawPlate": true,
+		"drawShine": false,
+		"color": 5f5049,
+		"healthMultiplier": 3
+		}
+	]
+}

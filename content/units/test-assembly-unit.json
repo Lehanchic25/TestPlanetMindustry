@@ -1,0 +1,47 @@
+{
+	"name": "assembler unit"
+	"type": "flying",
+	"lowAltitude": false,
+	"defaultController": "AssemblerAI",
+	"speed": 5.0,
+	"targetable": false,
+	"accel": 0.5,
+	"drag": 0.5,
+	"trailLength": 8,
+	"enegineColor": "A9D8FFFF",
+	"trailColor": "A9D8FFFF",
+	"flying": true,
+	"health": 100,
+	"hitSize": 8,
+	"armor": 1,
+	"itemCapacity": 0,
+	"engineOffset": 6
+	"abilities": [
+		{
+			"type": "EnergyFieldAbility",
+			"damage": 0,
+			"range": 45,
+			"reload": 60,
+			"hitBuildings": false,
+			"maxTargets": 5,
+			"sameTypeHealMult": 1
+			"status": "melting",
+			"statusDuration": 180,
+			"blinkSize": 0,
+			"blinkScl": 0,
+			"rotateSpeed": 0,
+			"sectors": 10,
+			"healPercent": 0.5,
+			"useAmmo": false
+		},
+		{
+			"type": "ForceFieldAbility",
+			"radius": 90,
+			"sides": 3,
+			"rotation": 0,
+			"max": 50,
+			"regen": 2.5,
+			"cooldown": 10
+		}
+	]
+}

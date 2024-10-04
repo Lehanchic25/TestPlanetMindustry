@@ -1,0 +1,93 @@
+{
+	"name": "Flying unit",
+	"type": flying,
+	"flying": true,
+	"alwaysUnlocked": true,
+	"armor": 0,
+	"faceTarget": true,
+	"squareShape": true,
+	"health": 400,
+	"speed": 2,
+	"range": 65,
+	"size": 10,
+	"omniMove": true,
+	"rotateMoveFirst": false,
+	"rotateShooting": false,
+	"rotateSpeed": 1,
+	weapons: [
+	{
+		"name": sap-missile-launcher,
+		"reload": 110,
+		"x": 0,
+		"y": 0,
+		"mirror": false,
+		"rotate": true,
+		"rotateSpeed": 1.5,
+		parts: [
+			{
+			"suffix": "-gun",
+			"x": 0,
+			"y": 0,
+			"mirror": false,
+			"progress": "recoil",
+			"moveX": 0,
+			"moveY": -1,
+			"moveRot": 0
+			},
+			{
+			"suffix": "-bars",
+			"x": 0,
+			"y": 0,
+			"mirror": false,
+			"progress": "warmup",
+			"moveX": 0,
+			"moveY": -1.25,
+			"moveRot": 0
+			},
+			{
+			"suffix": "-wings",
+			"x": 0,
+			"y": 0,
+			"mirror": false,
+			"progress": "warmup",
+			"moveX": 0,
+			"moveY": -1.25,
+			"moveRot": 0
+			},
+			{
+			"suffix": "-mid",
+			"x": 0,
+			"y": 0,
+			"mirror": true,
+			"progress": "warmup",
+			"moveX": 0.5,
+			"moveY": -1.25,
+			"moveRot": 0
+			}
+		]
+		bullet: {
+			"type": MissileBuletType,
+			"damage": 7,
+			"speed": 5,
+			"lifetime": 15,
+			"homingPower": 5
+			"homingRange": 9.5
+			"splashDamage": 17
+			"splashRadius": 6
+			"fragBullets": 6,
+			fragBullet: {
+				"type": SapBulletType,
+				"damage": 5,
+				"length": 20
+			}
+		}
+	}
+	],
+	abilities: [
+		{
+		"type": RegenAbility,
+		"amount": 1
+		"percentAmount": 0.05
+		}
+	]
+}

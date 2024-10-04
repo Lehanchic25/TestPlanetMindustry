@@ -1,0 +1,56 @@
+  "name": "spdr unt",
+  "alwaysUnlocked": true,
+  "armor": 1,
+  "commands": [
+	mine,
+	move
+  ]
+  "accel": 0.7,
+  "buildSpeed": 1,
+  "health": 360,
+  "hitSize": 7,
+  "mineSpeed": 3,
+  "itemCapacity": 30,
+  "isEnemy": false,
+  "mineTier": 2,
+  "speed": 2,
+  "lockLegBase": true,
+  "hovering": true,
+  "outlineRadius": 3,
+  "targetAir": false,
+  "type": "legs", //Тип юнита
+  "legCount": 3,
+  "legExtension": -3,
+  "legMaxLength": 1.1,
+  "legMinLength": 1,
+  "legMoveSpace": 2,
+  "legLength": 14,
+  "legLengthScl": 0.91,
+  "legForwardScl": 0.62,
+  "rippleScale": 0.5,
+  "legspeed": "0.075",
+  "legTrns": "0.6",
+  "rotateSpeed": 3,
+  "range": 120000,
+  "legGroupSize": 1,
+  "legContinuousMove": true
+  abilities: [
+	{
+	"type": EnergyFieldAbility,
+	"damage": 5,
+	"range": 70,
+	"reload": 10,
+	"maxTargets": 5,
+	"sameTypeHealMult": 1
+	"status": melting,
+	"statusDuration": 180, //Одна секунда = 60
+	"color": ab7b33,
+	"blinkSize": 0.0000001,
+	"blinkScl": 0,
+	"rotateSpeed": 9,
+	"sectors": 2,
+	"layer": 60,
+	"healPercent": 1,
+	"useAmmo": false
+	}
+  ]

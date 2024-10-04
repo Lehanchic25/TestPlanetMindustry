@@ -1,0 +1,112 @@
+{
+	"name": "Hover unit",
+	"type": hover,
+	"flying": false,
+	"alwaysUnlocked": true,
+	"range": 50
+	"armor": 1,
+	"health": 600,
+	"hovering": true,
+	parts: [
+		{
+		"suffix": "-part",
+		"x": 0,
+		"y": 0,
+		"mirror": true,
+		"progress": "warmup",
+		"moveX": 0,
+		"moveY": -1,
+		"moveRot": 45
+		children: [
+			{
+			"suffix": "-up",
+			"x": 0,
+			"y": 0,
+			"mirror": true,
+			"progress": "recoil",
+			"moveX": 0,
+			"moveY": 0,
+			"moveRot": 15
+			}
+		//{
+		//те самые ховер части. если хотите тот самый эффект, то эксперементируйте с этой частью кода. если нет, то просто удалите
+        //type: HoverPart 
+        //x: 0
+        //y: 0
+        //sides: 60
+        //mirror: false
+        //radius: 160
+        //phase: 360
+        //stroke: 3
+        //circles: 2
+        //minStroke: 0.5
+        //layer: 122
+        //color: ffa31a
+    //}
+    //{
+        //type: HoverPart
+        //x: 0
+        //y: 0
+        //sides: 60
+        //mirror: false
+        //radius: 160
+        //phase: 140
+        //stroke: 2
+        //circles: 1
+        //minStroke: 0.5
+        //layer: 122
+        //color: ffa31a
+    //}
+		]
+		}
+	],
+	weapons: [
+		{
+		"name": none,
+		"x": 0,
+		"y": -1,
+		"mirror": false,
+		"minWarmup": 0.25
+		"controllable": true,
+		"aiControllable": true,
+		"alwaysContinuous": true,
+		"continuous": true,
+		"rotate": true,
+		"rotateSpeed": 3,
+		bullet: {
+			"type": ContinuousFlameBulletType,
+			"damage": 5,
+			"length": 48,
+	        "flareWidth": 0,
+			"flareLength": 0,
+			"flareColor": ab7b33
+			"colors": [
+				"ab7b33",
+				"ab7b33",
+				"ab7b33",
+				"ab7b33",
+				"ab7b33"
+			]
+		}
+		}
+	],
+	abilities: [
+		{
+		"type": MoveLightningAbility,
+		"color": ab7b33,
+		"length": 5
+		},
+		{
+		"type": SuppressionFieldAbility,
+		"x": 0,
+		"y": -4,
+		"orbRadius": 1.9,
+		"particles": 0,
+		"color": ab7b33
+		},
+		{
+		"type": ShieldArcAbility,
+		"radius": 6
+		}
+	]
+}

@@ -1,0 +1,44 @@
+{
+	"name": "Mech unit",
+	"type": mech,
+	"flying": false,
+	"alwaysUnlocked": true,
+	"armor": 5,
+	"canBoost": true
+	"faceTarget": true,
+	"squareShape": true,
+	"health": 500,
+	"speed": 1,
+	"range": 120,
+	"size": 10,
+	"omniMove": true,
+	"rotateMoveFirst": false,
+	"rotateShooting": true,
+	"rotateSpeed": 2.75,
+	weapons: [
+		{
+		"name": "mechanical-gun",
+		"mirror": true,
+		"alternative": true,
+		"x": 5,
+		"y": 0,
+		"controllable": true,
+		"aiControllable": true,
+		"rotate": false,
+		"reload": 180,
+		bullet: {
+			"type": BasicBulletType,
+			"spawnUnit": "mechanical-rocket"
+		}
+		}
+	],
+	abilities: [
+		{
+		"type": UnitSpawnAbility,
+		"spawnX": 0,
+		"spawnY": 0,
+		"spawnTime": 240
+		"unit": "stell"
+		}
+	]
+}
