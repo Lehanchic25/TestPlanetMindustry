@@ -1,0 +1,38 @@
+{
+	"localizedName": "Unit Assembler",
+	"description": "Builds specialist units.",
+	"type": "UnitAssembler",
+	"size": 3,
+	"itemCapacity": 75,
+	"liquidCapacity": 162,
+	"areaSize": 5,
+	"dronesCreated": 4, //Не менять - плохо будет
+	"droneType": "test-assembly-unit",
+	"droneConstructTime": 60,
+	"category": "units",
+	"consumes": {
+		"power": 3,
+		"items": {
+			"items": [
+				"testItem/25"
+			]
+		},
+		"liquid": {
+			"liquid": "testLiquid",
+			"amount": 0.5
+		}
+	},
+	"plans": [
+		{
+		"unit": "flying-unit",
+		"requirements": [
+			"test-tank-unit/1",
+			"test-hover-unit/1",
+		],
+		"time": 1260
+		}
+	],
+	"requirements": [
+		"testItem/250"
+	]
+}
