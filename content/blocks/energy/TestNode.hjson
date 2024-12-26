@@ -1,0 +1,21 @@
+  //Радиус подключения (в блоках)
+  laserRange: 12
+  //Максимальное количество подключений
+  maxNodes: 7
+  category: power
+  localizedName: TestNode
+  health: 100
+  size: 1
+
+  requirements: [
+    testItem2/4
+]
+
+research: {
+    parent: Core
+    requirements: [
+        testItem2/24
+ ]
+}
+
+type: PowerNode
