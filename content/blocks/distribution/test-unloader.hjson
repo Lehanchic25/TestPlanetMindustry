@@ -3,10 +3,10 @@ name: Test Unloader
 health: 70
 capacity: 0
 
-//Потом создадим 2 предмет который будет создаваться с помощью первого предмета и плавильни
+//Создадим 2 предмет который будет создаваться с помощью первого предмета и плавильни
 requirements: [
   testItem/30
-  //testItem2/25
+  testItem2/25
 ] 
 category: effect
 
@@ -15,6 +15,6 @@ research: {
     parent: test-router
         requirements: [
             testItem/60
-            //testItem2/50
+            testItem2/50
     ] 
 }
