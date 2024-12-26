@@ -1,0 +1,43 @@
+localizedName: Test Stove
+type: ConsumeGenerator
+category: power
+size: 1
+health: 360
+
+hasPower: true
+powerProduction: 0.666666666       //Сколько производит энергии
+itemDuration: 240        //Сколько времени  предмет будет сжигаться
+squareSprite: false
+
+consumes: {
+    items: [
+		"testItem2/1"
+	]
+}
+
+//Эффект. В данном случае что-то  вроде дыма
+generateEffect: {
+	x: 0
+	y: 0
+	particles: 1
+    length: 0
+    lifetime: 60
+	type: ParticleEffect
+	sizeFrom: 0
+    sizeTo: 5
+	colorFrom: 6F6E80
+    colorTo: 9898A4
+}
+//Шанс появления эффекта
+effectChance: 0.1
+
+requirements: [
+    "testItem/20"
+]
+
+research: {
+    parent: "TestNode"
+    requirements: [
+        "testItem/50"
+    ]
+}
